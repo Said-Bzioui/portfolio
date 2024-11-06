@@ -127,9 +127,9 @@ ul {
 }
 
 /* Large */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .container {
-        width: 75%;
+        width: 90%;
     }
 }
 
@@ -495,24 +495,16 @@ ul {
 
 
 /*--------------------------about------------------ */
-.about {
-    transform: translateY(30px);
-    opacity: 0;
-    animation: scrool .3s linear forwards;
-    transition: var(--transition);
-
-}
 
 .about:nth-child(1) {
     animation-delay: 1s;
 }
 
-@keyframes scrool {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 
+@media (max-width:670px) {
+    .about {
+        margin-top: 30px;
+    }
 }
 
 .about>p {
@@ -601,10 +593,6 @@ ul {
 
 /*--------------------------resume------------------ */
 .resume {
-    transform: translateY(30px);
-    opacity: 0;
-    animation: scrool .3s linear forwards;
-    transition: var(--transition);
     position: relative;
     width: 100%;
 
@@ -872,6 +860,7 @@ ul {
 .contact-us form .info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-us form .info .personal-info input {
@@ -924,10 +913,26 @@ ul {
     background-color: var(--mainColor);
 }
 
+@media (max-width:670px) {
+    .about,.contact-us,.resume,.portfolio {
+        margin-top: 30px;
+    }
+}
 
+.about,.resume,.portfolio,.contact-us{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: scrool .3s linear forwards;
+    transition: var(--transition);
+}
 
+@keyframes scrool {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
-
+}
 
 /* popUp  */
 
