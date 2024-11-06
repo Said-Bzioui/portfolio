@@ -515,6 +515,12 @@ ul {
     width: 75%;
 }
 
+@media (max-width:992px) {
+    .about>p {
+        width: 100%;
+    }
+
+}
 
 .about>h3 {
     font-size: 22px;
@@ -654,7 +660,7 @@ ul {
 
 .resume .education {
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     position: relative;
     width: fit-content;
 
@@ -728,6 +734,25 @@ ul {
     font-size: 14px;
 }
 
+@media (max-width:768px) {
+
+    .resume .education .edu-info .edu-box h3,
+    .projects .project .project-box h3 {
+        font-size: 15px;
+    }
+
+    .resume .education .edu-info .edu-box p,
+    .projects .project .project-box p {
+        font-size: 14px;
+    }
+
+    .resume .education .edu-info .edu-box h4 {
+        font-size: 12px;
+    }
+
+
+}
+
 .resume .education .edu-info .edu-box>img {
     position: absolute;
     bottom: 10px;
@@ -740,7 +765,8 @@ ul {
 /*--------------------------PROJECTS------------------ */
 .projects {
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
+    margin-top: 20px;
     position: relative;
     width: fit-content;
 
@@ -829,6 +855,7 @@ ul {
     font-size: 14px;
 }
 
+
 /* --------------------------CONTACT-------------------------------- */
 /* contact */
 .contact-us .map {
@@ -839,44 +866,51 @@ ul {
 }
 
 .contact-us .map iframe {
-    /* filter: grayscale(60%); */
+    filter: grayscale(60%);
     border-radius: 15px;
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 300px;
 
 
 }
 
 .contact-us form {
     margin-top: 50px;
-    width: 60%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-inline: auto;
+    width: 80%;
 
 
 }
+.contact-us form h3{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+/* .contact-us form .info {} */
 
-.contact-us form .info {
+.contact-us form .info .personal-info {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 10px;
+}
+@media (max-width:768px) {
+.contact-us form .info .personal-info {
+    flex-direction: column;
+}
+    
 }
 
 .contact-us form .info .personal-info input {
     background-color: transparent;
     border: 2px solid var(--alt-bg-Color);
     outline: none;
-    width: 300px;
-    height: 30px;
+    width: 100%;   
+    height: 50px;
     padding: 20px;
     border-radius: 5px;
     transition: var(--transition);
 }
 
-.contact-us form .info .personal-info input:last-child {
-    margin-top: 20px;
-}
 
 .contact-us form .info textarea:focus,
 .contact-us form .info .personal-info input:focus {
@@ -885,8 +919,9 @@ ul {
 
 .contact-us form .info textarea {
     resize: none;
-    flex: 1;
-    margin-left: 20px;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
     background-color: transparent;
     border: 2px solid var(--alt-bg-Color);
     outline: none;
@@ -896,15 +931,19 @@ ul {
 
 
 }
-
-.contact-us form input[type="submit"] {
+.contact-us form .submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contact-us form .submit input[type="submit"] {
     background-color: var(--btn);
     border: none;
-    padding: 5px 10px;
+    padding:  10px;
     border-radius: 5px;
     margin-top: 20px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     cursor: pointer;
     transition: var(--transition);
 }
@@ -914,12 +953,30 @@ ul {
 }
 
 @media (max-width:670px) {
-    .about,.contact-us,.resume,.portfolio {
+
+    .about,
+    .contact-us,
+    .resume,
+    .portfolio {
         margin-top: 30px;
     }
 }
 
-.about,.resume,.portfolio,.contact-us{
+@media (max-width:992px) {
+    .contact-us .map iframe {
+        filter: grayscale(60%);
+        border-radius: 15px;
+        width: 100%;
+        height: 200px;
+
+
+    }
+}
+
+.about,
+.resume,
+.portfolio,
+.contact-us {
     transform: translateY(60px);
     opacity: 0;
     animation: scrool .3s linear forwards;
@@ -959,7 +1016,7 @@ ul {
     overflow-y: scroll;
     padding-inline: 30px;
     position: relative;
-    width: 65%;
+    width: 70%;
     max-height: 95vh;
     background-color: var(--main-bg-Color);
     border: 1px solid var(--alt-bg-Color);
@@ -973,6 +1030,13 @@ ul {
     transition: var(--transition);
     transform: translateY(80px);
     opacity: 0;
+}
+
+@media (max-width:992px) {
+    .deatails .pop-ditails {
+        width: 95%;
+        max-height: 95vh;
+    }
 }
 
 @keyframes popup {
@@ -1037,28 +1101,29 @@ ul {
 
 .deatails .pop-ditails .img-holder {
     background-color: var(--alt-bg-Color);
-    width: 60%;
+    width: 90%;
     margin-inline: auto;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+}
+
+@media (max-width:992px) {
+    .deatails .pop-ditails .img-holder {
+        width: 100%;
+        background-color: transparent;
+        /* height: 400px; */
+        margin-bottom: 0;
+    }
 }
 
 .deatails .pop-ditails .img-holder .image {
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
     overflow: hidden;
 }
 
@@ -1090,6 +1155,13 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     margin-block: 10px;
+}
+
+@media (max-width:670px) {
+    .deatails .pop-ditails .tools {
+        width: 100%;
+
+    }
 }
 
 .deatails .pop-ditails .tools>span {
