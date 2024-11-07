@@ -76,20 +76,11 @@ ul {
     width: 0;
     height: 5px;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background-color: var(--mainColor);
     bottom: 0;
     left: 0;
     animation: fill .2s linear forwards;
-    -webkit-animation: fill .2s linear forwards;
     transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
 }
 
 @keyframes fill {
@@ -129,7 +120,7 @@ ul {
 /* Large */
 @media (min-width: 1024px) {
     .container {
-        width: 90%;
+        width: 75%;
     }
 }
 
@@ -632,14 +623,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--alt-bg-Color);
     border-radius: 10px;
 
 }
 
 .about .doing .do-box i {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--mainColor);
     margin-right: 20px;
 }
@@ -649,13 +640,13 @@ ul {
 }
 
 .about .doing .do-box .info h3 {
-    font-size: 18px;
+    font-size: 15px;
     width: fit-content;
 }
 
 .about .doing .do-box .info p {
     width: 270px;
-    font-size: 14px;
+    font-size: 12px;
     color: #ccc;
     line-height: 2;
 }
@@ -956,7 +947,7 @@ ul {
 .contact-us .map iframe {
     filter: grayscale(60%);
     border-radius: 15px;
-    width: 100%;
+    width: 70%;
     height: 300px;
 
 
@@ -965,7 +956,7 @@ ul {
 .contact-us form {
     margin-top: 50px;
     margin-inline: auto;
-    width: 80%;
+    width: 70%;
 
 
 }
