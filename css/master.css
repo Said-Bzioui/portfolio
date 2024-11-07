@@ -433,7 +433,7 @@ ul {
         height: 60px;
         padding: 15px 25px;
     }
-    
+
     .allpage .content .navBar ul li a {
         margin-right: 10px;
         font-size: 14px;
@@ -444,9 +444,9 @@ ul {
     .allpage .content .menu ul li a.active {
         color: var(--mainColor);
         font-size: 16px;
-    
+
     }
-    
+
 }
 
 .allpage .content .menu ul {
@@ -975,10 +975,13 @@ ul {
 }
 
 @media (max-width:768px) {
+    .contact-us form {
+        width: 100%;
+    }
+
     .contact-us form .info .personal-info {
         flex-direction: column;
     }
-
 }
 
 
@@ -1095,7 +1098,7 @@ ul {
     transition: .3s;
 }
 
-input:focus~label ,
+input:focus~label,
 input:valid~label {
     color: #EEE;
     top: 0;
@@ -1104,6 +1107,13 @@ input:valid~label {
     font-size: 14px;
 
 }
+
+@media (max-width:768px) {
+    .holder input[type="email"] {
+        margin-top: -30px;
+    }
+}
+
 /* popUp  */
 
 .deatails {
