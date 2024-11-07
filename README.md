@@ -1,2 +1,1 @@
-# said.bzioui
 personnel protfolio
