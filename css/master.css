@@ -921,13 +921,14 @@ ul {
 }
 
 .projects .project .project-box h3 {
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 300;
     color: #EEE;
 }
 
 .projects .project .project-box p {
     color: #888;
+    font-size: 13px;
 }
 
 .projects .project .project-box h4 {
@@ -980,16 +981,6 @@ ul {
 
 }
 
-.contact-us form .info .personal-info input {
-    background-color: transparent;
-    border: 2px solid var(--alt-bg-Color);
-    outline: none;
-    width: 100%;
-    height: 50px;
-    padding: 20px;
-    border-radius: 5px;
-    transition: var(--transition);
-}
 
 
 .contact-us form .info textarea:focus,
@@ -1073,6 +1064,46 @@ ul {
 
 }
 
+.holder {
+    width: 100%;
+    position: relative;
+}
+
+.holder input {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding-inline: 15px;
+    caret-color: var(--mainColor);
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--alt-bg-Color);
+    font-size: 14px;
+
+}
+
+.holder label {
+    color: #888;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .3s;
+}
+
+input:focus~label ,
+input:valid~label {
+    color: #EEE;
+    top: 0;
+    background-color: var(--main-bg-Color);
+    padding-inline: 5px;
+    font-size: 14px;
+
+}
 /* popUp  */
 
 .deatails {
