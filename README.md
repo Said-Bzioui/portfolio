@@ -17,8 +17,8 @@ Welcome to my portfolio!
 
 Hi! I'm **bzioui said**, a passionate developer with a focus on **[Your Focus Area, e.g., full-stack development, front-end development, data science, etc.]**. I enjoy creating efficient, scalable, and user-friendly solutions to real-world problems.
 
-- 💻 Currently learning: **[What you are learning right now]**
-- 🌱 I'm focused on building skills in **[Tech Stack/Area of Focus]**
+- 💻 Currently learning: **web full stack**
+- 🌱 I'm focused on building skills in **IT**
 - 🌍 Open to new opportunities, collaborations, and challenges
 
 ---
@@ -33,21 +33,15 @@ Here's a brief overview of the skills and technologies I've worked with:
 - Bootstrap, Tailwind CSS, Material UI
 
 ### Backend:
-- Node.js, Express.js, Django, Flask
+- Node.js, Express.js, Django
 - RESTful APIs, GraphQL
-- Database: MongoDB, PostgreSQL, MySQL, SQLite
+- Database: MongoDB, MySQL
 
 ### DevOps & Tools:
 - Git, GitHub, GitLab
-- Docker, Kubernetes
 - CI/CD, Jenkins
 - Heroku, AWS, Netlify
 
 ### Other:
 - Agile methodologies, Scrum
 - robotics
-
----
-
-
-Feel free to reach out for collaborations, job op
